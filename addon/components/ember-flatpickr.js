@@ -54,7 +54,7 @@ export default TextField.extend({
    * @private
    */
   _onChange(selectedDates, dateStr, instance) {
-    if (selectedDates && selectedDates.length > 0) {
+    if (selectedDates && selectedDates.length >= 0) {
       this.sendAction('onChange', selectedDates, dateStr, instance);
     }
   },
